@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:opacity="transparent" >
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle" >
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="rectangle" >
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/spinner_default_holo_light">
+    </item>
+
+</selector>

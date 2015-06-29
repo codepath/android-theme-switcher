@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="?pageBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+        <TextView
+                android:id="@+id/tvSelectTheme"
+                style="?textLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_text_select_theme" />
+
+        <Spinner
+                android:id="@+id/spThemes"
+                style="?spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvSelectTheme"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/spinner_margin_left"
+                android:layout_toRightOf="@+id/tvSelectTheme"
+                android:entries="@array/theme_array"
+                android:spinnerMode="dropdown" />
+
+        <RelativeLayout
+                android:id="@+id/rlCredentials"
+                style="?whiteBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSelectTheme" >
+
+                <TextView
+                        android:id="@+id/tvCredentials"
+                        style="?textSubheader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_text_credentials" />
+
+                <EditText
+                        android:id="@+id/tvUsername"
+                        style="?textRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvCredentials"
+                        android:hint="@string/settings_text_username_hint"
+                        android:inputType="text"
+                        android:lines="1" />
+
+                <EditText
+                        android:id="@+id/tvpassword"
+                        style="?textRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvUsername"
+                        android:layout_marginTop="@dimen/edittext_margin_top"
+                        android:hint="@string/settings_text_password_hint"
+                        android:inputType="textPassword"
+                        android:lines="1" />
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/tvSync"
+                style="?textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlCredentials"
+                android:text="@string/settings_text_sync_automatically"
+                android:textSize="17sp" />
+
+        <CheckBox
+                android:id="@+id/checkbox_sync_automatically"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvSync"
+                android:layout_alignParentRight="true"
+                android:checked="true" />
+
+        <TextView
+                android:id="@+id/tvLocation"
+                style="?textRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSync"
+                android:layout_marginTop="@dimen/view_margin"
+                android:text="@string/settings_text_location"
+                android:textSize="17sp" />
+
+        <Switch
+                android:id="@+id/toggle_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvLocation"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tvLocation"
+                android:switchTextAppearance="@style/switch_text_appearance"
+                android:textOff="@string/settings_text_state_off"
+                android:textOn="@string/settings_text_state_on" />
+
+        <Button
+                android:id="@+id/btnClearData"
+                style="?button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/view_margin"
+                android:text="@string/settings_text_clear_data" />
+
+</RelativeLayout>
