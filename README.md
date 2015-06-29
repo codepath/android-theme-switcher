@@ -48,5 +48,4 @@ Let's understand the steps involved in creating this app. And after that you wil
  * Hint: Refer [apply dynamic themes](http://guides.codepath.com/android/Developing-Custom-Themes#8-apply-dynamic-themes) guide.
 
 **3.** Test your app
- * Finally, run your app and switch between the three themes you created in this exercise. Hopefully you have a better understanding of drawables, styles and themes by now. Try to use these concepts in your group project to add more polish to the UI.
-Now we will go ahead and implement the exercise. 
+ * Finally, run your app and switch between the three themes you created in this exercise. Hopefully you have a better understanding of drawables, styles and themes by now.
