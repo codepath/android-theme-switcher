@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Check the "res/values/attrs.xml" file for where these style names are first defined.  -->
     <style name="Theme.Material_Light" parent="Theme.AppCompat.Light">
         <item name="pageBackground">@style/page_background_wh</item>
         <item name="textSubheader">@style/text_subheader_wh</item>
