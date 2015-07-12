@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <!-- This is declaring the XML attributes that can be set within a theme. -->
+    <!-- Check the "res/values/themes.xml" file for examples of these attributes being set.  -->
     <attr name="pageBackground" format="reference" />
     <attr name="textSubheader" format="reference" />
     <attr name="textLarge" format="reference" />
