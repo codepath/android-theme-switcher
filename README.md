@@ -1,4 +1,4 @@
-# android-facebook-theme-switcher
+# android-theme-switcher
 An android app that changes custom themes at runtime.
 
 ## Overview
